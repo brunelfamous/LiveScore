@@ -3,9 +3,9 @@ import cors from 'cors'
 dotenv.config();
 
 import express from 'express';
-import { notFound } from './middlewares/notFound.js';
-import { errorHandler } from './middlewares/errorHandler.js';
 import apiRouter from './routes/index.js';
+import { notFound } from '../../../fullstack-product/product-back/src/middlewares/notFound.js';
+import { errorHandler } from '../../../fullstack-product/product-back/src/middlewares/errorHandler.js';
 
 const app = express();
 // Autoriser toutes les origines (pour dev seulement)
