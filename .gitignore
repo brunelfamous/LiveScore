@@ -1,0 +1,7 @@
+# node_modules partout
+**/node_modules/
+**/package-lock.json
+
+# env partout
+**/.env
+**/.env.*
