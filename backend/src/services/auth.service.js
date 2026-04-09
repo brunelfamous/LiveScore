@@ -48,6 +48,7 @@ export const logout = async (userId, token) => {
 
   // On décode le token pour récupérer sa date d'expiration exacte
   const decoded = jwt.decode(token);
+  console.log(decoded);
 
   if (!decoded || !decoded.exp) {
     // On passe quand même l'user hors-ligne par sécurité
@@ -55,7 +56,7 @@ export const logout = async (userId, token) => {
     await user.save();
     return { message: "Déconnexion effectuée (session déjà expirée)." };
   }
-  
+
   const expiresAt = new Date(decoded.exp * 1000);
 
   // On ajoute le token à la blacklist
