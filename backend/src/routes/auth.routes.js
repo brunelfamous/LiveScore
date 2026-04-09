@@ -13,7 +13,7 @@ router.post('/logout', protect, authController.logout);
 router.post('/register-manager', protect, restrictTo('super-admin'), authController.registerGestionnaire);
 
 // Route Inscription User (Publique)
-router.post('/register-user', authController.registerUser);
+router.post('/register', authController.registerUser);
 
 
 export default router;
