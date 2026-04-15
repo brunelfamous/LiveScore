@@ -1,0 +1,15 @@
+Un tournoi doit avoir ses rubriques de sélection:
+Type: enum(championnats, direct elimination, mixte)
+mode: aller et retour ou un match.
+Temps de jeu
+catégory (football)
+description
+Pays
+name
+logo
+startDate
+endDate
+manager (ObjectId -> ref: 'User')
+isActive
+
+une équipe
