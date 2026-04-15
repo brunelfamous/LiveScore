@@ -1,4 +1,3 @@
-import mongoose from 'mongoose';
 import Tournament from '../models/Tournament.js';
 
 export const createTournament = async (data) => {
